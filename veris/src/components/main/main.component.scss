@@ -1,0 +1,34 @@
+.main-content-container {
+  background-color: #f1f5f9;
+  height: 91vh;
+  .btn-container {
+    .ant-btn {
+      background-color: #003cc1;
+      border-radius: 8px;
+      width: 108px;
+      > span {
+        margin-bottom: -7px;
+      }
+      .ant-btn-icon > svg {
+        width: 13px;
+      }
+    }
+  }
+  .card-container-parent {
+    height: 80vh;
+    .ant-btn {
+      border-radius: 8px;
+    }
+    > div {
+      width: 32%;
+      .card-title {
+        margin-right: 8px;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 8px;
+        padding: 16px;
+      }
+    }
+  }
+}
