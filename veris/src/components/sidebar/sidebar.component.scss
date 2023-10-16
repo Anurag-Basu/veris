@@ -1,0 +1,18 @@
+.sidebar-parent-container {
+  width: 16.5%;
+  border-right: 1px solid black;
+  .ant-menu-item-icon {
+    height: 16px;
+  }
+  .ant-menu-light.ant-menu-root.ant-menu-inline {
+    border: none;
+    background: transparent;
+  }
+  .bottom-menu {
+    border-top: 2px solid gray;
+  }
+  .logo-img{
+    height: 35px;
+    width: 131px;
+  }
+}
