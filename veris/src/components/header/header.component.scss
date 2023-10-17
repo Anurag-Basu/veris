@@ -1,15 +1,19 @@
 .header-container {
   height: 70px;
+  .menu-icon {
+    display: none;
+    @media only screen and (max-width: 1200px) {
+      display: inline-block;
+    }
+  }
   .location-container {
     width: 16.5%;
     border-left: 1px solid #f1f1f1;
     @media only screen and (max-width: 1200px) {
-        width: 18%;
-      }
+      width: 18%;
+    }
   }
   @media only screen and (max-width: 1200px) {
     width: 96vw;
   }
 }
-
-

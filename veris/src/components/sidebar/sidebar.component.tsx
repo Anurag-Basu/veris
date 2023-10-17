@@ -1,15 +1,6 @@
-import { Menu } from "antd";
 import "./sidebar.component.scss";
-import {
-  Book,
-  DownloadCloud,
-  BarChart2,
-  Archive,
-  Settings,
-  Briefcase,
-  Eye,
-  Globe,
-} from "react-feather"; // Import React Feather icons
+
+import { SidebarMenu1, SidebarMenu2 } from "../../common";
 
 const Sidebar = () => {
   return (
@@ -20,41 +11,10 @@ const Sidebar = () => {
           alt="veris logo"
           className="pl-2 mb-8 logo-img"
         />
-        <Menu mode="inline" theme="light">
-          <Menu.SubMenu key="submenu" icon={<Globe />} title=" Welcome Veris">
-            <Menu.Item key="2">Visitors</Menu.Item>
-            <Menu.Item key="3">Visit Logs</Menu.Item>
-            <Menu.Item key="4">Insights</Menu.Item>
-          </Menu.SubMenu>
-          <Menu.Item key="5" icon={<DownloadCloud />}>
-            Bookings
-          </Menu.Item>
-          <Menu.Item key="6" icon={<Briefcase />}>
-            Work
-          </Menu.Item>
-          <Menu.Item key="7" icon={<Eye />}>
-            Veris Sight
-          </Menu.Item>
-        </Menu>
+        <SidebarMenu1 />
       </div>
       <div className="bottom-menu">
-        <Menu theme="light" mode="inline">
-          <Menu.Item key="1" icon={<Book />}>
-            Member Book
-          </Menu.Item>
-          <Menu.Item key="2" icon={<DownloadCloud />}>
-            Download Center
-          </Menu.Item>
-          <Menu.Item key="3" icon={<BarChart2 />}>
-            Quick Reports
-          </Menu.Item>
-          <Menu.Item key="4" icon={<Archive />}>
-            Audit Logs
-          </Menu.Item>
-          <Menu.Item key="5" icon={<Settings />}>
-            Settings
-          </Menu.Item>
-        </Menu>
+        <SidebarMenu2 />
 
         <div className="flex items-center">
           <img

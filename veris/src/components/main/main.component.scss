@@ -1,6 +1,8 @@
 .main-content-container {
   background-color: #f1f5f9;
   height: 91vh;
+  overflow-y: hidden;
+
   .btn-container {
     .ant-btn {
       background-color: #003cc1;
@@ -24,7 +26,7 @@
       width: 32%;
 
       .card-title {
-        min-width: 390px;
+        width: 360px;
         margin-right: 8px;
         background: white;
         display: flex;
@@ -32,11 +34,11 @@
         border-radius: 8px;
         padding: 16px;
       }
-      @media only screen and (max-width: 1200px) {
-        width: 48%;
-      }
       @media only screen and (max-width: 770px) {
         width: 64%;
+      }
+      @media only screen and (max-width: 1200px) {
+        width: 48%;
       }
     }
     @media only screen and (max-width: 1200px) {
@@ -51,7 +53,6 @@
 
   @media only screen and (max-width: 1200px) {
     width: 100vw;
-    overflow-y: scroll;
     padding: 12px 12px !important;
   }
 }
