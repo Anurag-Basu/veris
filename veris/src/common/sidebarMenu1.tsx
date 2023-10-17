@@ -3,7 +3,7 @@ import { Briefcase, DownloadCloud, Eye, Globe } from "react-feather";
 
 const SidebarMenu1 = () => {
   return (
-    <Menu mode="inline" theme="light">
+    <Menu mode="inline" theme="light" selectedKeys={["2"]}>
       <Menu.SubMenu key="submenu" icon={<Globe />} title=" Welcome Veris">
         <Menu.Item key="2">Visitors</Menu.Item>
         <Menu.Item key="3">Visit Logs</Menu.Item>

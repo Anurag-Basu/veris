@@ -15,6 +15,9 @@
         width: 13px;
       }
     }
+    @media only screen and (max-width: 620px) {
+      display: none;
+    }
   }
   .card-container-parent {
     height: 87vh;
@@ -48,6 +51,10 @@
     @media only screen and (max-width: 770px) {
       flex-wrap: nowrap;
       flex-direction: column;
+      align-items: center;
+    }
+    @media only screen and (max-width: 520px) {
+      align-items: flex-start;
     }
   }
 

@@ -9,6 +9,10 @@
   .location-container {
     width: 16.5%;
     border-left: 1px solid #f1f1f1;
+
+    @media only screen and (max-width: 620px) {
+      display: none;
+    }
     @media only screen and (max-width: 1200px) {
       width: 18%;
     }
