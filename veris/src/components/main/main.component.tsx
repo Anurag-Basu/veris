@@ -43,7 +43,6 @@ const Main = () => {
       webCheckIn: true,
     },
   ];
-  console.log(cardItem);
   return (
     <div className="main-content-container p-[24px]">
       <div className="flex justify-between ">
@@ -62,7 +61,7 @@ const Main = () => {
       </div>
 
       <div className="relative flex pt-6 overflow-y-scroll card-container-parent ">
-        <div className="">
+        <div className="card-section">
           <div className="card-title">
             <span>Expected</span>
             <Button type="text" icon={<MoreVertical size={13} />} />
@@ -75,7 +74,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="card-section">
           <div className="">
             <div className="card-title">
               <span>Checked-in </span>
@@ -91,7 +90,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="card-section">
           <div className="">
             <div className="card-title">
               <span>Checked-out </span>
